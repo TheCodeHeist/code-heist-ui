@@ -1,2 +1,71 @@
-@import "./color_variables";
+@import "./_color_variables";
 
+.ch-btn {
+  padding: 10px 20px;
+  background-color: #888888;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #4b4b4b;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 1px 3px $btn-focus;
+    outline: none;
+  }
+}
+
+.ch-btn-default {
+  background-color: $default;
+
+  &:hover {
+    background-color: $default-dark;
+  }
+}
+
+.ch-btn-auxiliary {
+  background-color: $auxiliary;
+
+  &:hover {
+    background-color: $auxiliary-dark;
+  }
+}
+
+.ch-btn-info {
+  background-color: $info;
+  color: #000000;
+
+  &:hover {
+    background-color: $info-dark;
+    color: #ffffff;
+  }
+}
+
+.ch-btn-success {
+  background-color: $success;
+
+  &:hover {
+    background-color: $success-dark;
+  }
+}
+
+.ch-btn-warning {
+  background-color: $warning;
+  color: #000000;
+
+  &:hover {
+    background-color: $warning-dark;
+    color: #ffffff;
+  }
+}
+
+.ch-btn-danger {
+  background-color: $danger;
+
+  &:hover {
+    background-color: $danger-dark;
+  }
+}

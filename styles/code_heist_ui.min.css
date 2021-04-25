@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=code_heist_ui.min.css.map */
+.ch-btn {
+  padding: 10px 20px;
+  background-color: #888888;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.ch-btn:hover {
+  background-color: #4b4b4b;
+}
+
+.ch-btn:focus {
+  -webkit-box-shadow: 0px 0px 1px 3px #1790d679;
+          box-shadow: 0px 0px 1px 3px #1790d679;
+  outline: none;
+}
+
+.ch-btn-default {
+  background-color: #0084ff;
+}
+
+.ch-btn-default:hover {
+  background-color: #0056a7;
+}
+
+.ch-btn-auxiliary {
+  background-color: #4d5861;
+}
+
+.ch-btn-auxiliary:hover {
+  background-color: #373f46;
+}
+
+.ch-btn-info {
+  background-color: #22aeff;
+  color: #000000;
+}
+
+.ch-btn-info:hover {
+  background-color: #1c86c4;
+  color: #ffffff;
+}
+
+.ch-btn-success {
+  background-color: #1ea703;
+}
+
+.ch-btn-success:hover {
+  background-color: #157c00;
+}
+
+.ch-btn-warning {
+  background-color: #ffd000;
+  color: #000000;
+}
+
+.ch-btn-warning:hover {
+  background-color: #e2ad00;
+  color: #ffffff;
+}
+
+.ch-btn-danger {
+  background-color: #d41919;
+}
+
+.ch-btn-danger:hover {
+  background-color: #a01111;
+}
+/*# sourceMappingURL=code_heist_ui.min.css.map */
