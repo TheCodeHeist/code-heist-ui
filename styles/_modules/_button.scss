@@ -3,13 +3,14 @@
 .ch-btn {
   padding: 10px 20px;
   background-color: #888888;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 3px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
     background-color: #4b4b4b;
+    color: #ffffff;
   }
 
   &:focus {

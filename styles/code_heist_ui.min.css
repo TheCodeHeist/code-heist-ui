@@ -1,7 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
 .ch-btn {
   padding: 10px 20px;
   background-color: #888888;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 3px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -10,6 +19,7 @@
 
 .ch-btn:hover {
   background-color: #4b4b4b;
+  color: #ffffff;
 }
 
 .ch-btn:focus {
@@ -68,5 +78,100 @@
 
 .ch-btn-danger:hover {
   background-color: #a01111;
+}
+
+.ch-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e2e2e2;
+  height: 4.5rem;
+}
+
+.ch-navbar a.ch-navbar-brand {
+  text-decoration: none;
+  font-size: 20px;
+  color: #292cd6;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ch-navbar a.ch-navbar-brand:hover {
+  color: #0f156b;
+}
+
+.ch-navbar button.ch-navbar-menu-toggler {
+  padding: 2px 5px;
+  display: none;
+}
+
+.ch-navbar button.ch-navbar-menu-toggler div {
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  margin: 5px;
+}
+
+.ch-navbar ul.ch-navbar-menu {
+  overflow: hidden;
+}
+
+.ch-navbar ul.ch-navbar-menu li.ch-navbar-menu-item {
+  list-style: none;
+  float: left;
+  padding: 5px 15px;
+}
+
+.ch-navbar ul.ch-navbar-menu li.ch-navbar-menu-item a.ch-navbar-menu-item-link {
+  text-decoration: none;
+  color: #292cd6;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.ch-navbar ul.ch-navbar-menu li.ch-navbar-menu-item a.ch-navbar-menu-item-link:hover {
+  color: #0f156b;
+}
+
+@media only screen and (max-width: 768px) {
+  .ch-navbar button.ch-navbar-menu-toggler {
+    display: block;
+  }
+  .ch-navbar ul.ch-navbar-menu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 3.5rem;
+    height: 34.5rem;
+    background-color: #e2e2e2;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+  .ch-navbar ul.ch-navbar-menu-slide-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 /*# sourceMappingURL=code_heist_ui.min.css.map */

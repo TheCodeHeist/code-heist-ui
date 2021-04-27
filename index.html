@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="./styles/code_heist_ui.min.css" />
   </head>
   <body>
+    <nav class="ch-navbar">
+      <a href="#" class="ch-navbar-brand">Logo</a>
+
+      <button
+        class="ch-navbar-menu-toggler"
+        data-target="ch-navbar-menu-toggler-id"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+
+      <ul class="ch-navbar-menu" id="ch-navbar-menu-toggler-id">
+        <li class="ch-navbar-menu-item">
+          <a href="#" class="ch-navbar-menu-item-link">Link</a>
+        </li>
+        <li class="ch-navbar-menu-item">
+          <a href="#" class="ch-navbar-menu-item-link">Link</a>
+        </li>
+        <li class="ch-navbar-menu-item">
+          <a href="#" class="ch-navbar-menu-item-link">Link</a>
+        </li>
+        <li class="ch-navbar-menu-item">
+          <a href="#" class="ch-navbar-menu-item-link">Link</a>
+        </li>
+      </ul>
+    </nav>
+
     <button class="ch-btn">ch-btn</button>
     <button class="ch-btn ch-btn-default">ch-btn-default</button>
     <button class="ch-btn ch-btn-auxiliary">ch-btn-auxiliary</button>
@@ -15,5 +43,8 @@
     <button class="ch-btn ch-btn-success">ch-btn-success</button>
     <button class="ch-btn ch-btn-warning">ch-btn-warning</button>
     <button class="ch-btn ch-btn-danger">ch-btn-danger</button>
+
+    <script src="./scripts/code_heist_ui.min.js"></script>
+    <script src="./scripts/_modules/_navbar.js"></script>
   </body>
 </html>
